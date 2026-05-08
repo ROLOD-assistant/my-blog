@@ -1,7 +1,7 @@
 ---
 title: SQL Server 2025 Express 版 vs Developer 版（差異比較）
 pubDate: 2026-02-24
-description: 比較SQL Server 2025 Express同Developer版既分別，帮你揀岩既版本
+description: 比較SQL Server 2025 Express同Developer版既分別，幫你揀巖既版本
 categories: [技術]
 tags: [SQL Server, 教學, 數據庫]
 ---
@@ -11,7 +11,7 @@ tags: [SQL Server, 教學, 數據庫]
 | 項目                   | Express 版 (2025)                                     | Developer 版 (Enterprise Developer / Standard Developer)     | 說明 / 建議                     |
 | -------------------- | ---------------------------------------------------- | ----------------------------------------------------------- | --------------------------- |
 | **價格**               | 完全免費，可商用生產                                           | 完全免費，但僅限開發/測試/學習，禁止生產                                       | Express 適合小型生產              |
-| **單一資料庫大小上限**        | **50 GB**（2025 新增）                                   | 無限制（524 PB 等級）                                              | Express 適合中型應用              |
+| **單一資料庫大小上限**        | **50 GB**（2025 新增）                                   | 無限制（524 PB 等級）                                              | Express 適閤中型應用              |
 | **記憶體緩衝池上限**         | ≈1.4 GB                                              | 無限制（Enterprise）或 256 GB（Standard）                           | Express 高負載易不足              |
 | **CPU 上限**           | 1 socket 或最多 4 核心                                    | 無限制（Enterprise）或 32 核心（Standard）                            | Express 適合輕量                |
 | **SQL Server Agent** | 無（無法自動排程/備份）                                         | 有（完整）                                                       | Express 無自動維護               |

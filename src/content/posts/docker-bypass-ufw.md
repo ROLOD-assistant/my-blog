@@ -43,7 +43,7 @@ To                         Action      From
 
 ### 但 Docker 寫咗入底層 iptables
 
-當你响 `docker-compose.yml` 度寫：
+當你響 `docker-compose.yml` 度寫：
 
 ```yaml
 ports:
@@ -71,7 +71,7 @@ sudo iptables -L DOCKER -n -v
 ### 優先級既問題
 
 Docker 既 iptables 規則：
-- 順序係响 UFW 既**前面**
+- 順序係響 UFW 既**前面**
 - 流量一入來就被 Docker「搶先」轉發到 container
 - 根本冇機會走到 UFW 既檢查
 
@@ -117,7 +117,7 @@ location / {
 }
 ```
 
-咁樣只有 80/443 需要响 UFW 度開。
+咁樣只有 80/443 需要響 UFW 度開。
 
 ---
 

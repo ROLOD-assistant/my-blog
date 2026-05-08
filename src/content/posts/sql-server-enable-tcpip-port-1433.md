@@ -49,7 +49,7 @@ tags: [SQL Server, 教學, 數據庫, 網絡]
 - 右鍵 **SQL Server (MSSQLSERVER)**（或你既instance名）→ **Restart**
 -（可選但推薦）都 restart **SQL Server Browser** service
 
-### 5. 驗證监听端口 1433
+### 5. 驗證監聽端口 1433
 
 - 係 server 度打開 **Command Prompt**（管理員）
 - 運行：
@@ -62,7 +62,7 @@ tags: [SQL Server, 教學, 數據庫, 網絡]
 TCP    0.0.0.0:1433           0.0.0.0:0              LISTENING       1234
 ```
 
-- → 表示 SQL 係所有 IP (0.0.0.0) 监听 port 1433
+- → 表示 SQL 係所有 IP (0.0.0.0) 監聽 port 1433
 
 ### 6. 防火牆：允許 TCP 1433 入站
 
@@ -91,7 +91,7 @@ TCP    0.0.0.0:1433           0.0.0.0:0              LISTENING       1234
 | 設定靜態端口 | TCP/IP Properties → IP Addresses → IPAll | TCP Dynamic Ports = 空白, TCP Port = 1433 | 可靠連接，唔洗 Browser |
 | 重啟 Service | SQL Server Services | Restart SQL Server (instance) | 應用所有改動 |
 | 防火牆規則 | Windows Firewall → Inbound → New Rule | TCP 1433 → Allow → All Profiles | 防止「Connect timed out」error |
-| 用 netstat 驗證 | Command Prompt | `netstat -ano \| find "1433"` | 確認 SQL 係监听緊 |
+| 用 netstat 驗證 | Command Prompt | `netstat -ano \| find "1433"` | 確認 SQL 係監聽緊 |
 
 ---
 

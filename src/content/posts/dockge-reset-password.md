@@ -27,7 +27,7 @@ tags: [技術, Docker, Dockge]
 
 Dockge既web介面密碼唔記得咗？
 
-## 解决方法
+## 解決方法
 
 ### 1. SSH 去 host
 

@@ -12,7 +12,7 @@ tags: ['Linux', 'PAM', 'Security', '教學']
 
 > The password fails the dictionary check - it is based on a dictionary word
 
-呢個係因為 **pam_pwquality** 呢個 module 响度block你～
+呢個係因為 **pam_pwquality** 呢個 module 響度block你～
 
 ---
 
@@ -24,7 +24,7 @@ tags: ['Linux', 'PAM', 'Security', '教學']
 sudo passwd username
 ```
 
-root 改密碼既話，會完全 bypass 晒所有 dictionary check！
+root 改密碼既話，會完全 bypass 曬所有 dictionary check！
 
 ---
 

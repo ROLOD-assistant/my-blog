@@ -8,7 +8,7 @@ tags: ['Docker', 'Ubuntu', '教學', 'DevOps']
 
 # Docker Engine 安裝教學（Ubuntu）🐳
 
-呢篇教你點樣响 Ubuntu 上用官方既 convenience script 快速安裝 Docker Engine～
+呢篇教你點樣響 Ubuntu 上用官方既 convenience script 快速安裝 Docker Engine～
 
 > ⚠️ **注意：** 呢個方法只推薦用於測試同開發環境，生產環境建議用 apt repository 方式安裝。
 

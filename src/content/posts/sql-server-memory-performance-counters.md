@@ -8,7 +8,7 @@ tags: [SQL Server, 教學, 數據庫, 效能]
 
 # SQL Server 效能監控 - 記憶體相關 Performance Counters 💾
 
-今日教你幾個有用既 SQL Server 效能監控語句，等你可以了解 SQL Server 既記憶體狀況！
+今日教你幾個有用既 SQL Server 效能監控語句，等你可以瞭解 SQL Server 既記憶體狀況！
 
 ---
 
@@ -51,14 +51,14 @@ WHERE counter_name LIKE N'%Buffer cache hit ratio%';
 ### 點解咁緊要？
 
 - **越高越好**：理想值應該 > 95%
-- 如果低過 90%，表示 SQL Server 经常要去硬碟攞數據，而不是從記憶體
+- 如果低過 90%，表示 SQL Server 經常要去硬碟攞數據，而不是從記憶體
 - 呢個直接影響query既速度
 
 ### 幾時用？
 
 - 效能優化既時候
 - 懷疑緩衝池大細唔夠既時候
-- 同 PLE 一齊睇可以全面了解記憶體健康
+- 同 PLE 一齊睇可以全面瞭解記憶體健康
 
 ---
 
@@ -77,7 +77,7 @@ WHERE counter_name LIKE N'%Buffer cache hit ratio%';
 - 如果發現長期低數值，可能要考慮：
   - 加 RAM
   - 調整 `max server memory`
-  - 優化经常用到既 queries
+  - 優化經常用到既 queries
   - 檢查有無memory leak
 
 ---

@@ -23,7 +23,7 @@ tags: [SQL Server, 教學, 數據庫]
 - 等完成
 
 ### 3. 清理剩餘項目
-拎走以下组件（如果存在）：
+拎走以下組件（如果存在）：
 - SQL Server Setup
 - SQL Server Browser
 - SQL Server VSS Writer
