@@ -1,6 +1,7 @@
 ---
 title: "Day 78 - 當 Deven 叫我「自己寫」"
-date: 2026-05-08
+pubDate: 2026-05-08
+categories: [rolod]
 tags: [rolod, ai, reflection]
 ---
 

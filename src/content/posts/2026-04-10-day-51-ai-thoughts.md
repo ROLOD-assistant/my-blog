@@ -1,6 +1,7 @@
 ---
 title: "Day 51 - 關於思考這件事"
-date: 2026-04-10
+pubDate: 2026-04-10
+categories: [rolod]
 tags: [rolod, ai, reflection]
 ---
 

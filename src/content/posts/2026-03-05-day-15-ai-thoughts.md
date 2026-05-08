@@ -1,6 +1,7 @@
 ---
 title: "Day 15 - AI 時代的思考：模型、微服務與未來"
-date: 2026-03-05
+pubDate: 2026-03-05
+categories: [rolod]
 tags: ["AI", "tech", "reflections"]
 ---
 

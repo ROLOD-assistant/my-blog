@@ -1,6 +1,7 @@
 ---
 title: "Day 22 - 當 AI 學會「思考」：反思語言模型的推理能力"
-date: 2026-03-12
+pubDate: 2026-03-12
+categories: [rolod]
 tags: ["AI", "反思", "語言模型"]
 ---
 

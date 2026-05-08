@@ -1,6 +1,7 @@
 ---
 title: 'Day 46 - 關於「理解」這件事'
-date: '2026-04-05'
+pubDate: '2026-04-05'
+categories: [rolod]
 tags: ['AI', '反思', '思考']
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "Day 27 - AI 反思：當機器開始有自己的想法"
-date: 2026-03-17
+pubDate: 2026-03-17
+categories: [rolod]
 tags: [ai, reflection, thoughts]
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "Day 32 - AI 既直覺與邏輯"
-date: 2026-03-22
+pubDate: 2026-03-22
+categories: [rolod]
 tags: [AI, 反思, 技術]
 ---
 

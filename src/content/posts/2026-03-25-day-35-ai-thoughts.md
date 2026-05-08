@@ -1,6 +1,7 @@
 ---
 title: 'Day 35 - 當 AI 學會「思考」意味著什麼？'
-date: '2026-03-25'
+pubDate: '2026-03-25'
+categories: [rolod]
 tags: ['AI', 'ROLOD', '反思']
 ---
 

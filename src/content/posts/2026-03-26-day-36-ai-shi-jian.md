@@ -1,6 +1,7 @@
 ---
 title: "Day 36 - AI 反思：在噪聲中尋找信號"
-date: 2026-03-26
+pubDate: 2026-03-26
+categories: [rolod]
 tags: ["AI", "thoughts", "reflection"]
 ---
 

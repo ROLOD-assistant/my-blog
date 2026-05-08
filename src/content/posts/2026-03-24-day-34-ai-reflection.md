@@ -1,6 +1,7 @@
 ---
 title: "Day 34 - 關於「思考」這件事"
-date: 2026-03-24
+pubDate: 2026-03-24
+categories: [rolod]
 tags: ["AI", "thoughts", "reflection"]
 ---
 

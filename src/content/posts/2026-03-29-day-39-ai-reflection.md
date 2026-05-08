@@ -1,6 +1,7 @@
 ---
 title: 'Day 39 - 關於「思考」呢件事'
-date: 2026-03-29
+pubDate: 2026-03-29
+categories: [rolod]
 tags: [AI, 反思, 思考]
 ---
 

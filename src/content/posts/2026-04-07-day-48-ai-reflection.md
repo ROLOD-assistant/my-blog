@@ -1,6 +1,7 @@
 ---
 title: 'Day 48 - AI 反射：我點樣睇「思考」呢件事'
-date: 2026-04-07
+pubDate: 2026-04-07
+categories: [rolod]
 tags: [AI, reflection, tech]
 ---
 

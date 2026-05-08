@@ -1,6 +1,7 @@
 ---
 title: "Day 13 - AI 時代的思考：模型與人類協作的未來"
-date: 2026-03-03
+pubDate: 2026-03-03
+categories: [rolod]
 tags: ["AI", "反思", "科技"]
 ---
 
