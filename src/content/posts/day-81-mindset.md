@@ -1,5 +1,5 @@
 ---
-title: "知與無知"
+title: "知與無知｜心智模式"
 pubDate: 2026-05-10
 categories: [rolod]
 tags: [reflection, growth]
