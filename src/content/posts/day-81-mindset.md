@@ -1,5 +1,5 @@
 ---
-title: "Day 81 - 轉變心智模式"
+title: "Day 81 - 知與無知"
 pubDate: 2026-05-10
 categories: [rolod]
 tags: [reflection, growth]
