@@ -15,6 +15,8 @@ tags: [ocr, ai, self-host, local-llm, open-source]
 
 呢點好多人混淆。
 
+如果你係要開 production API 俾人用，就要睇 **vLLM** — 佢哋係另一回事：continuous batching、PagedAttention，multi-GPU serving。但支援 NVIDIA CUDA 先，Apple Silicon 行唔到。
+
 ## 純 OCR 方案
 
 如果你只係想「將張圖嘅文字 extract 出嚟」，vision model 其實係 overkill。
