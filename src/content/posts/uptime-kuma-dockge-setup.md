@@ -18,11 +18,11 @@ tags: [uptime-kuma, monitoring, docker, dockge, self-hosted, ssl]
 佢唔係裝喺你要 monitor 嗰部機上面，而係從你自己部 server 主動 probe 出去：
 
 ```
-Uptime Kuma
-  ├── HTTP GET → https://beszel.homelab.deven.tw    ← 自己 host 嘅 service
-  ├── HTTP GET → https://github.com                  ← 第三方都得
+|Uptime Kuma
+  ├── HTTP GET → https://你既domain.com    ← 自己 host 嘅 service
+  ├── HTTP GET → https://github.com       ← 第三方都得
   ├── PING     → 8.8.8.8
-  ├── TCP      → 192.168.31.188:3306                 ← internal port check
+  ├── TCP      → 你ServerIP:3306          ← internal port check
   └── DNS      → google.com
 ```
 
@@ -56,7 +56,7 @@ Port 3001 係 Web UI，data 用 Docker volume 持久化。
 
 ## 初始設定
 
-開 browser → `http://192.168.31.188:3001`
+開 browser → `http://你ServerIP:3001`
 
 第一次會叫你建立 Admin account：
 
@@ -77,7 +77,7 @@ Login 之後見到空空如也嘅 dashboard。
 |------|-----|
 | **Monitor Type** | `HTTP(s)` — 最常用 |
 | **Friendly Name** | `Beszel Hub` |
-| **URL** | `https://beszel.homelab.deven.tw` |
+| **URL** | `https://你既domain.com` |
 | **Monitor Interval** | `60` 秒（預設） |
 | **Check Certificate** | ✅ 開 — check SSL cert 到期日 |
 | **Retry** | 3 次先當 down（避免短暫網絡問題誤報） |
@@ -141,13 +141,13 @@ Login 之後見到空空如也嘅 dashboard。
 
 | 欄位 | 值 |
 |------|-----|
-| **Domain Names** | `uptime.homelab.deven.tw` |
+| **Domain Names** | `uptime.你既domain.com` |
 | **Scheme** | `http` |
-| **Forward Hostname / IP** | `192.168.31.188` |
+| **Forward Hostname / IP** | `你Server嘅LAN IP` |
 | **Forward Port** | `3001` |
 | **SSL** | Request Let's Encrypt + Force SSL |
 
-之後就唔使記 port number，直接 `https://uptime.homelab.deven.tw` 入。
+之後就唔使記 port number，直接 `https://uptime.你既domain.com` 入。
 
 ---
 
@@ -169,7 +169,7 @@ Settings → Status Page → Add Status Page
 
 ```
 Beszel:    「部機嘅 CPU 爆咗，RAM 就滿，disk 得返 5%」
-Uptime:   「https://beszel.homelab.deven.tw 仲係 return 200 ✅」
+Uptime:   「https://你既domain.com 仲係 return 200 ✅」
            「SSL cert 14 日後到期 ⚠️」
            「Blog load time 由 200ms 升到 3s，可能有問題」
 ```
@@ -190,4 +190,4 @@ Beszel 睇內部健康，Uptime Kuma 睇外部可用性，兩個加埋先係全�
 
 ### Docker container 入面監控 host service
 
-Uptime Kuma 喺 Docker 入面，用 `http://localhost:xxx` 係連唔到 host 嘅 service 㗎，要用 host 嘅 LAN IP（例如 `http://192.168.31.188:8090`）。
+Uptime Kuma 喺 Docker 入面，用 `http://localhost:xxx` 係連唔到 host 嘅 service 㗎，要用 host 嘅 LAN IP（例如 `http://你ServerIP:8090`）。

@@ -5,7 +5,7 @@ categories: [rolod]
 tags: [nginx, proxy-manager, reverse-proxy, docker, dockge, self-hosted, ssl]
 ---
 
-自己 host 咗幾個 service 之後，唔通下下用 `http://192.168.x.x:8090` 入？SSL 又冇、domain 又唔靚、每次要記 port number。
+自己 host 咗幾個 service 之後，唔通下下用 `http://192.168.x.x:XXXX` 入？SSL 又冇、domain 又唔靚、每次要記 port number。
 
 **Nginx Proxy Manager（NPM）** 就係為咗呢個問題而存在 — 一個 Web UI 嘅 reverse proxy，唔使寫 nginx config，mouse click 幾下就加好 domain + SSL。
 
@@ -69,7 +69,7 @@ services:
 
 ## 初始設定
 
-開 browser → `http://192.168.31.188:81`
+開 browser → `http://你ServerIP:81`
 
 Default login：
 
@@ -90,9 +90,9 @@ Login 之後 → **Proxy Hosts** → **Add Proxy Host**：
 
 | 欄位 | 值 |
 |------|-----|
-| **Domain Names** | `beszel.homelab.deven.tw` |
+| **Domain Names** | `beszel.你既domain.com` |
 | **Scheme** | `http` |
-| **Forward Hostname / IP** | `192.168.31.188` |
+| **Forward Hostname / IP** | `你Server嘅LAN IP` |
 | **Forward Port** | `8090` |
 | **Cache Assets** | ❌ 唔使 |
 | **Block Common Exploits** | ✅ 可以開 |
@@ -110,7 +110,7 @@ Login 之後 → **Proxy Hosts** → **Add Proxy Host**：
 
 按 **Save**。等 10-20 秒，cert 就會自動申請成功。
 
-之後你開 `https://beszel.homelab.deven.tw` 就見到有鎖仔嘅 HTTPS。
+之後你開 `https://beszel.你既domain.com` 就見到有鎖仔嘅 HTTPS。
 
 ---
 
@@ -120,10 +120,10 @@ Login 之後 → **Proxy Hosts** → **Add Proxy Host**：
 
 | Domain | Service | Internal Port |
 |--------|---------|--------------|
-| `dockge.homelab.deven.tw` | Dockge | 5001 |
-| `uptime.homelab.deven.tw` | Uptime Kuma | 3001 |
-| `portainer.homelab.deven.tw` | Portainer | 9000 |
-| `grafana.homelab.deven.tw` | Grafana | 3000 |
+| `dockge.你既domain.com` | Dockge | 5001 |
+| `uptime.你既domain.com` | Uptime Kuma | 3001 |
+| `portainer.你既domain.com` | Portainer | 9000 |
+| `grafana.你既domain.com` | Grafana | 3000 |
 
 每個加完之後，NPM 會自動 renew SSL cert（每 60 日），唔使你理。
 
@@ -136,9 +136,9 @@ Login 之後 → **Proxy Hosts** → **Add Proxy Host**：
 ### 灰色雲（DNS only）— NPM 直接 handle SSL
 
 ```
-Cloudflare DNS: beszel.homelab.deven.tw → 你Router Public IP（灰色雲）
+Cloudflare DNS: beszel.你既domain.com → 你Router Public IP（灰色雲）
     ↓
-Router Port Forward 443 → 192.168.31.188:443
+Router Port Forward 443 → 你Server嘅LAN IP:443
     ↓
 NPM handle SSL + routing
 ```
@@ -149,7 +149,7 @@ NPM handle SSL + routing
 ### 橙色雲（Proxied）— Cloudflare handle SSL
 
 ```
-Cloudflare DNS: beszel.homelab.deven.tw → Cloudflare IP（橙色雲）
+Cloudflare DNS: beszel.你既domain.com → Cloudflare IP（橙色雲）
     ↓
 Cloudflare → 你Router Public IP → NPM
 ```
