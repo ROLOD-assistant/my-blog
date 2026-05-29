@@ -48,6 +48,8 @@ services:
       - "7575:7575"
 ```
 
+參考官方文檔：[homarr.dev/docs/getting-started/installation/docker](https://homarr.dev/docs/getting-started/installation/docker/)
+
 **⚠️ 一定要改 `SECRET_ENCRYPTION_KEY`** — 用以下 command 生成一組：
 
 ```bash
