@@ -75,7 +75,14 @@ services:
 2. Paste 上面 YAML → Deploy
 3. 等 10 秒，`docker compose logs sub2api` confirm 冇 error
 4. 開 browser → `http://你ServerIP:8080`
-5. Register admin account → 開始加 subscription 🎉
+5. 首次開機會見到 setup wizard，Database Configuration 記得 **Host 填 `db`**（唔係 `localhost`），因為 sub2api container 要用 Docker internal DNS 去連 PostgreSQL container：
+   - **Host:** `db`
+   - **Port:** `5432`
+   - **Username:** `postgres`
+   - **Password:** 你 compose 入面 set 嘅 `POSTGRES_PASSWORD`
+   - **Database Name:** `sub2api`
+   - **SSL Mode:** Disable
+6. Register admin account → 開始加 subscription 🎉
 
 ## 點解用 internal network？
 
