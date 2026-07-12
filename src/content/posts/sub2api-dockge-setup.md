@@ -41,7 +41,7 @@ services:
     ports:
       - "8080:8080"
     environment:
-      - DATABASE_URL=postgres://postgres:***@db:5432/sub2api?sslmode=disable
+      - DATABASE_URL=postgres://postgres:37d5f75b9d82120cc0044536499c968b@db:5432/sub2api?sslmode=disable
       - REDIS_URL=redis://redis:6379
     depends_on:
       - db
@@ -53,7 +53,7 @@ services:
     container_name: sub2api-db
     environment:
       - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=***
+      - POSTGRES_PASSWORD=37d5f75b9d82120cc0044536499c968b
       - POSTGRES_DB=sub2api
     volumes:
       - ./postgres-data:/var/lib/postgresql/data
@@ -67,7 +67,7 @@ services:
     restart: unless-stopped
 ```
 
-> ⚠️ `POSTGRES_PASSWORD=***` — 自己改一個 secure password，可以用 `openssl rand -hex 32` generate。`DATABASE_URL` 裡面嘅 password 都要同步改。
+> ⚠️ 上面嘅 `POSTGRES_PASSWORD` 同 `DATABASE_URL` 入面嘅 password 要一致。呢度用 `openssl rand -hex 16` generate 咗一個做 example，記得自己改另一個 secure password，可以用 `openssl rand -hex 32` generate。`DATABASE_URL` 裡面嘅 password 都要同步改。
 
 **部署步驟：**
 
